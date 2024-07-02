@@ -2,20 +2,20 @@
 share: "true"
 filename: 
 category:
-  - "[Publish](Publish.md)"
+  - "[[Publish|Publish]]"
 title: this is a title
 ---
-I will attempt to link to the squash note: [lemme trying renaming this](./squash.md).
+I will attempt to link to the squash note: [[./squash|lemme trying renaming this]].
 
 Does that work? Does this work?
-Linking with obsidian link only: [sanfoora](./sanfoora.md)
-Linking with title: [Sanfoora on the websitee](Sanfoora%20on%20the%20websitee.md)
-Linking with filename: [sanfoora](sanfoora.md)
+Linking with obsidian link only: [[./sanfoora|sanfoora]]
+Linking with title: [[Sanfoora on the websitee|Sanfoora on the websitee]]
+Linking with filename: [[sanfoora|sanfoora]]
 
-Link to something with same filename and title: [installnode](./installnode.md)
+Link to something with same filename and title: [[./installnode|installnode]]
 
-add image skr meow aloaaaa:
+aaadd image skr meow aloaaaaa:
 
-![Death-Note-death-note-7946511-1919-1283-753826017.jpg](../attachments/obsidian/Death-Note-death-note-7946511-1919-1283-753826017.jpg)
+![[../attachments/obsidian/Death-Note-death-note-7946511-1919-1283-753826017.jpg|Death-Note-death-note-7946511-1919-1283-753826017.jpg]]
 
 
