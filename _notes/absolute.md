@@ -2,8 +2,9 @@
 share: "true"
 filename: absolute
 category:
-  - "[[Publish|Publish]]"
+  - "[Publish](Publish)"
 title: Do not ask absolute questions
+created: 2024-07-02
 ---
 
 **LESS GOOD**
