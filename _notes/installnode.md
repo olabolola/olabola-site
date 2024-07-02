@@ -2,13 +2,13 @@
 filename: installnode
 share: "true"
 category:
-  - "[Publish](Publish.md)"
-  - "[Runbooks](Runbooks.md)"
+  - "[[Publish|Publish]]"
+  - "[[Runbooks|Runbooks]]"
 labels:
-  - "[NodeJS](NodeJS.md)"
-  - "[NPM](NPM.md)"
-  - "[Ubuntu](Ubuntu.md)"
-  - "[OSx](OSx.md)"
+  - "[[NodeJS|NodeJS]]"
+  - "[[NPM|NPM]]"
+  - "[[Ubuntu|Ubuntu]]"
+  - "[[OSx|OSx]]"
 created: 2024-07-01
 title: How to install node and npm
 ---
