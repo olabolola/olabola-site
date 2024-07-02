@@ -2,7 +2,7 @@
 share: "true"
 filename: absolute
 category:
-  - "[[Publish|Publish]]"
+  - "[Publish](Publish.md)"
 ---
 
 **LESS GOOD**
