@@ -2,7 +2,7 @@
 share: "true"
 filename: squash
 category:
-  - "[[Publish|Publish]]"
+  - "[Publish](Publish.md)"
 ---
 
 Sometimes you have pushed a whole bunch of commits and want to create a PR from your branch. The problem is your commits are messy and people will judge you for it when they are reviewing your PR.
