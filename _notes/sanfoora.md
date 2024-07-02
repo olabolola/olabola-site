@@ -2,7 +2,7 @@
 share: "true"
 filename: sanfoora
 category:
-  - "[Publish](Publish.md)"
+  - "[Publish](Publish)"
 title: Sanfoora on the websitee
 ---
 
