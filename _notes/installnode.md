@@ -2,13 +2,13 @@
 filename: installnode
 share: "true"
 category:
-  - "[[Publish|Publish]]"
-  - "[[Runbooks|Runbooks]]"
+  - "[Publish](Publish.md)"
+  - "[Runbooks](Runbooks.md)"
 labels:
-  - "[[NodeJS|NodeJS]]"
-  - "[[NPM|NPM]]"
-  - "[[Ubuntu|Ubuntu]]"
-  - "[[OSx|OSx]]"
+  - "[NodeJS](NodeJS.md)"
+  - "[NPM](NPM.md)"
+  - "[Ubuntu](Ubuntu.md)"
+  - "[OSx](OSx.md)"
 created: 2024-07-01
 ---
 
