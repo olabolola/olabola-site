@@ -2,12 +2,12 @@
 share: "true"
 filename: upsize
 category:
-  - "[[Publish|Publish]]"
-  - "[[Runbooks|Runbooks]]"
+  - "[Publish](Publish.md)"
+  - "[Runbooks](Runbooks.md)"
 labels:
-  - "[[Ubuntu|Ubuntu]]"
-  - "[[Dual Boot|Dual Boot]]"
-  - "[[Windows|Windows]]"
+  - "[Ubuntu](Ubuntu.md)"
+  - "[Dual Boot](Dual%20Boot.md)"
+  - "[Windows](Windows.md)"
 created: 2024-07-01
 ---
 
