@@ -2,13 +2,13 @@
 share: "true"
 filename: upsize
 category:
-  - "[[Publish|Publish]]"
-  - "[[Runbooks|Runbooks]]"
+  - "[Publish](Publish)"
+  - "[Runbooks](Runbooks)"
 labels:
-  - "[[Ubuntu|Ubuntu]]"
-  - "[[Dual Boot|Dual Boot]]"
-  - "[[Windows|Windows]]"
-created: 2024-07-01
+  - "[Ubuntu](Ubuntu)"
+  - "[Dual Boot](Dual%20Boot)"
+  - "[Windows](Windows)"
+created: 2024-07-02
 title: How to increase the size of the Ubuntu partition on Windows dual boot
 ---
 
