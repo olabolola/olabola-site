@@ -5,7 +5,7 @@ category:
   - "[Publish](Publish.md)"
 title: this is a title
 ---
-I will attempt to link to the squash note: [squash](./squash.md).
+I will attempt to link to the squash note: [lemme trying renaming this](./squash.md).
 
 Does that work? Does this work?
 
