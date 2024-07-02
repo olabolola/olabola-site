@@ -8,5 +8,8 @@ I will attempt to link to the squash note: [squash](./squash.md).
 
 Does that work? Does this work?
 
-add image: ![1_1mpE6fsq5LNxH31xeTWi5w-scaled-3586731024.jpeg](../images/obsidian/1_1mpE6fsq5LNxH31xeTWi5w-scaled-3586731024.jpeg)
+add image moew:
+
+![Death-Note-death-note-7946511-1919-1283-753826017.jpg](./Death-Note-death-note-7946511-1919-1283-753826017.jpg)
+
 
