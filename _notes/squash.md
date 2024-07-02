@@ -2,7 +2,7 @@
 share: "true"
 filename: squash
 category:
-  - "[Publish](Publish.md)"
+  - "[Publish](Publish)"
 title: Squash a number of local or published commits into a single commit
 ---
 
