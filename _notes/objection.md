@@ -4,7 +4,7 @@ share: "true"
 filename: objection
 category:
   - "[Publish](Publish)"
-title: 
+title: Don’t give them a chance to object
 ---
 If you want something to move forwards and you don't really need a response from someone but you need to let them know nonetheless, then it's best to phrase your message such that you can move forward even if they do not reply to you.
 
