@@ -79,28 +79,15 @@ div.highlight {
 /**
  * Codeblock.
  */
- pre.highlight {
+ pre.highlight > button {
+  opacity: 0;
+}
 
-  // copy code to clipboard
-  .copy {
-    color: white;
-    position: absolute;
-    right: 1.2rem;
-    top: 1.2rem;
-    opacity: 0;
+pre.highlight:hover > button {
+  opacity: 1;
+}
 
-    &:active,
-    &:focus,
-    &:hover {
-      background: rgba(0, 0, 0, 0.7);
-      opacity: 1;
-    }
-  }
-
-  &:active .copy,
-  &:focus .copy,
-  &:hover .copy {
-    background: rgba(0, 0, 0, 0.7);
-    opacity: 1;
-  }
+pre.highlight > button:active,
+pre.highlight > button:focus {
+  opacity: 1;
 }
