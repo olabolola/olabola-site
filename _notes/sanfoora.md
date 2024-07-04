@@ -3,7 +3,7 @@ share: "true"
 filename: sanfoora
 category:
   - "[Publish](Publish)"
-title: Sanfoora on the websitee
+title: Sanfoora on the website
 created: 2024-07-02
 ---
 
