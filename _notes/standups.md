@@ -21,3 +21,5 @@ What held me back from arriving at this conclusion was that I was giving standup
 Do not give respect that which has not earned it. You don't earn respect by being popular and well known. You have to have some substance behind it.
 
 Standups have nothing.
+
+![Pasted image 20241012151405.png](../attachments/obsidian/Pasted%20image%2020241012151405.png)
