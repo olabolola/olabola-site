@@ -6,7 +6,7 @@ category:
 title: All the Movies I watched in 2024
 created: 2024-12-26
 ---
-I use [Steph Ango's rating system](https://stephango.com/vault#:~:text=Rating%20system,a%20bad%20way) out of 7. They are ordered by date read.
+I use [Steph Ango's rating system](https://stephango.com/vault#:~:text=Rating%20system,a%20bad%20way) out of 7. They are ordered by date watched.
 
 | Poster                                                                                                                                                  | Title                                                                                                               | Year | Director                                                                                                      | Rating |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ---- | ------------------------------------------------------------------------------------------------------------- | ------ |
