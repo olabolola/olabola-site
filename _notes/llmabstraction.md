@@ -27,5 +27,5 @@ Perhaps LLMs are a unique abstraction and they will not follow the trends of its
 --- 
 
 See also:
-- [aihype](./aihype)
+- [My thoughts on LLMs](./aihype)
 	- Not 100% sure I still hold the same beliefs now. I will revisit this soon.
