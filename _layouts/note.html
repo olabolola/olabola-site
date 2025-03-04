@@ -9,6 +9,19 @@ layout: default
       >{% if page.type != 'pages' %} Last updated on {{ page.last_modified_at |
       date: "%B %-d, %Y" }} {% endif %}
     </time>
+    {% if page.labels %}
+    <div class="note-topics">
+      <span class="topics-label">Topics:</span>
+      {% for label in page.labels %} {% if label contains '[' %} {% assign topic
+      = label | split: ']' | first | remove: '[' %}
+      <a
+        href="{{ site.baseurl }}/topics/{{ topic | slugify }}"
+        class="topic-tag"
+        >{{ topic }}</a
+      >
+      {% endif %} {% endfor %}
+    </div>
+    {% endif %}
   </div>
 
   <div id="notes-entry-container">
@@ -79,6 +92,33 @@ layout: default
     border: none;
     border-radius: 0 0 0 5px;
     cursor: pointer;
+  }
+
+  .note-topics {
+    margin: 1em 0;
+  }
+
+  .topics-label {
+    color: #666;
+    margin-right: 0.5em;
+    font-size: 0.95em;
+  }
+
+  .topic-tag {
+    font-size: 0.85em;
+    color: #555;
+    text-decoration: none !important;
+    margin-left: 0.5em;
+  }
+
+  .topic-tag:before {
+    content: '#';
+    opacity: 0.5;
+  }
+
+  .topic-tag:hover {
+    color: #000;
+    text-decoration: underline !important;
   }
 </style>
 <script defer src="https://cdn.commento.io/js/commento.js"></script>

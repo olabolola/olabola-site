@@ -1,0 +1,38 @@
+---
+layout: page
+---
+
+<h1>Topic: {{ page.topic }}</h1>
+
+<div class="topic-notes">
+  <ul>
+    {% for note in site.notes %} {% assign has_topic = false %} {% for label in
+    note.labels %} {% if label contains '[' %} {% assign topic = label | split:
+    ']' | first | remove: '[' %} {% if topic == page.topic %} {% assign
+    has_topic = true %} {% break %} {% endif %} {% endif %} {% endfor %} {% if
+    has_topic %}
+    <li>
+      {{ note.last_modified_at | date: "%Y-%m-%d" }} —
+      <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}"
+        >{{ note.title }}</a
+      >
+    </li>
+    {% endif %} {% endfor %}
+  </ul>
+</div>
+
+<div class="back-to-home">
+  <a href="{{ site.baseurl }}/">← Back to Home</a>
+</div>
+
+<style>
+  .topic-notes {
+    margin: 2em 0;
+  }
+
+  .back-to-home {
+    margin-top: 3em;
+    padding-top: 1em;
+    border-top: 1px solid #eee;
+  }
+</style>

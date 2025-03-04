@@ -7,13 +7,43 @@ permalink: /
 
 # Welcome!
 
-<strong>Notes sorted by last updated</strong>
+<strong>Topics</strong>
 
-<ul>
+<div class="topics-cloud">
+{% assign all_topics = '' | split: '' %}
+{% for note in site.notes %}
+  {% if note.labels %}
+    {% for label in note.labels %}
+      {% if label contains '[' %}
+        {% assign topic = label | split: ']' | first | remove: '[' %}
+        {% assign all_topics = all_topics | push: topic %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+{% assign unique_topics = all_topics | uniq | sort %}
+{% for topic in unique_topics %}
+  <a href="{{ site.baseurl }}/topics/{{ topic | slugify }}" class="topic-link">{{ topic }}</a>
+{% endfor %}
+</div>
+
+<strong>Recent Notes</strong>
+
+<ul class="notes-list">
   {% assign recent_notes = site.notes | sort: "last_modified_at_timestamp" | reverse %}
   {% for note in recent_notes limit: 100 %}
     <li>
       {{ note.last_modified_at | date: "%Y-%m-%d" }} — <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
+      {% if note.labels %}
+        <span class="note-topics">
+          {% for label in note.labels %}
+            {% if label contains '[' %}
+              {% assign topic = label | split: ']' | first | remove: '[' %}
+              <a href="{{ site.baseurl }}/topics/{{ topic | slugify }}" class="topic-tag">{{ topic }}</a>
+            {% endif %}
+          {% endfor %}
+        </span>
+      {% endif %}
     </li>
   {% endfor %}
 </ul>
@@ -21,5 +51,48 @@ permalink: /
 <style>
   .wrapper {
     max-width: 46em;
+  }
+  
+  .topics-cloud {
+    margin: 1em 0 2em 0;
+    line-height: 2em;
+  }
+  
+  .topic-link {
+    display: inline-block;
+    margin-right: 1em;
+    text-decoration: none !important;
+    color: #555;
+    font-size: 0.95em;
+  }
+  
+  .topic-link:hover {
+    color: #000;
+    text-decoration: underline !important;
+  }
+  
+  .notes-list {
+    margin-bottom: 3em;
+  }
+  
+  .note-topics {
+    margin-left: 0.5em;
+  }
+  
+  .topic-tag {
+    font-size: 0.85em;
+    color: #555;
+    text-decoration: none !important;
+    margin-left: 0.5em;
+  }
+  
+  .topic-tag:before {
+    content: '#';
+    opacity: 0.5;
+  }
+  
+  .topic-tag:hover {
+    color: #000;
+    text-decoration: underline !important;
   }
 </style>
