@@ -30,10 +30,10 @@ permalink: /
 <strong>Recent Notes</strong>
 
 <ul class="notes-list">
-  {% assign recent_notes = site.notes | sort: "last_modified_at_timestamp" | reverse %}
+  {% assign recent_notes = site.notes | sort: "created" | reverse %}
   {% for note in recent_notes limit: 100 %}
     <li>
-      {{ note.last_modified_at | date: "%Y-%m-%d" }} — <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
+      {{ note.created | date: "%Y-%m-%d" }} — <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
       {% if note.labels %}
         <span class="note-topics">
           {% for label in note.labels %}

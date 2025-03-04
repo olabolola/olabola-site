@@ -6,13 +6,14 @@ layout: page
 
 <div class="topic-notes">
   <ul>
-    {% for note in site.notes %} {% assign has_topic = false %} {% for label in
+    {% assign sorted_notes = site.notes | sort: "created" | reverse %} {% for
+    note in sorted_notes %} {% assign has_topic = false %} {% for label in
     note.labels %} {% if label contains '[' %} {% assign topic = label | split:
     ']' | first | remove: '[' %} {% if topic == page.topic %} {% assign
     has_topic = true %} {% break %} {% endif %} {% endif %} {% endfor %} {% if
     has_topic %}
     <li>
-      {{ note.last_modified_at | date: "%Y-%m-%d" }} —
+      {{ note.created | date: "%Y-%m-%d" }} —
       <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}"
         >{{ note.title }}</a
       >
