@@ -10,6 +10,9 @@ cssclasses:
   - cards-2-3
   - cards-cover
   - table-max
+labels:
+  - "[lists](lists)"
+  - "[movies](movies)"
 ---
 I use [Steph Ango's rating system](https://stephango.com/vault#:~:text=Rating%20system,a%20bad%20way) out of 7. They are ordered by rating. See also [All the books I read in 2024](./read2024).
 
