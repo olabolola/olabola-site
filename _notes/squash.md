@@ -5,6 +5,8 @@ category:
   - "[Publish](Publish)"
 title: Squash a number of local or published commits into a single commit
 created: 2024-07-02
+labels:
+  - "[Git](Git)"
 ---
 
 Sometimes you have pushed a whole bunch of commits and want to create a PR from your branch. The problem is your commits are messy and people will judge you for it when they are reviewing your PR.
