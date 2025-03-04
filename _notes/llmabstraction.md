@@ -5,6 +5,8 @@ category:
   - "[Publish](Publish)"
 title: Are LLMs to Python as C was to assembly?
 created: 2025-02-25
+labels:
+  - "[AI](AI)"
 ---
 When assembly came it made knowledge of transistors useless. When C came along it made knowledge of assembly useless. When Python came along it made knowledge of C useless.
 

@@ -5,6 +5,8 @@ category:
   - "[Publish](Publish)"
 title: Do not ask absolute questions
 created: 2024-07-02
+labels:
+  - "[advice](advice)"
 ---
 
 **LESS GOOD**

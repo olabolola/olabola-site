@@ -5,6 +5,8 @@ category:
   - "[Publish](Publish)"
 title: My thoughts on LLMs
 created: 2024-12-26
+labels:
+  - "[AI](Artificial%20Intelligence)"
 ---
 These are just my current thoughts. Will be updated based on future evidence and experience.
 
