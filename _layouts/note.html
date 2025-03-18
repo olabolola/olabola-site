@@ -13,7 +13,7 @@ layout: default
     <div class="note-topics">
       <span class="topics-label">Topics:</span>
       {% for label in page.labels %} {% if label contains '[' %} {% assign topic
-      = label | split: ']' | first | remove: '[' %}
+      = label | split: ']' | first | remove: '[' | downcase %}
       <a
         href="{{ site.baseurl }}/topics/{{ topic | slugify }}"
         class="topic-tag"
@@ -112,7 +112,7 @@ layout: default
   }
 
   .topic-tag:before {
-    content: '#';
+    /* content: '#'; */
     opacity: 0.5;
   }
 

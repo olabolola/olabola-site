@@ -15,7 +15,7 @@ permalink: /
   {% if note.labels %}
     {% for label in note.labels %}
       {% if label contains '[' %}
-        {% assign topic = label | split: ']' | first | remove: '[' %}
+        {% assign topic = label | split: ']' | first | remove: '[' | downcase %}
         {% assign all_topics = all_topics | push: topic %}
       {% endif %}
     {% endfor %}
@@ -34,16 +34,6 @@ permalink: /
   {% for note in recent_notes limit: 100 %}
     <li>
       {{ note.created | date: "%Y-%m-%d" }} — <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
-      {% if note.labels %}
-        <span class="note-topics">
-          {% for label in note.labels %}
-            {% if label contains '[' %}
-              {% assign topic = label | split: ']' | first | remove: '[' %}
-              <a href="{{ site.baseurl }}/topics/{{ topic | slugify }}" class="topic-tag">{{ topic }}</a>
-            {% endif %}
-          {% endfor %}
-        </span>
-      {% endif %}
     </li>
   {% endfor %}
 </ul>
